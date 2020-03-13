@@ -13,7 +13,7 @@ if __name__ == '__main__':
         
     #加载模型
     model = CNN()
-    model.load_weights('./model/face6')    #读取模型权重参数
+    model.load_weights('./model/face7')    #读取模型权重参数
 
     #捕获指定摄像头的实时视频流
     cap = cv2.VideoCapture(0)
@@ -42,7 +42,7 @@ if __name__ == '__main__':
                 #print("GJ:{:0.2%} unknown:{:0.2%}".format(face_probe[0],face_probe[1]))
 
                
-                if face_probe[0] >=0.99:                                                                           
+                if face_probe[0] >=0.98:                                                                           
                     #文字提示是谁
                     name = 'GJ'
                 else:

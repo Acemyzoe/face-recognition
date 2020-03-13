@@ -111,10 +111,10 @@ class CNN(tf.keras.Model):
     
 if __name__ == '__main__': 
     learning_rate = 0.001 #学习率
-    batch= 64    #batch数
-    EPOCHS = 10  #学习轮数
+    batch= 32    #batch数
+    EPOCHS = 3  #学习轮数
  
-    dataset = Dataset('./face_data3/')    #数据都保存在这个文件夹下
+    dataset = Dataset('./face_data4/')    #数据都保存在这个文件夹下
     dataset.load()
     
     model = CNN()#模型初始化
@@ -159,6 +159,6 @@ if __name__ == '__main__':
       template = 'Epoch {} \nTrain Loss:{:.2f},Train Accuracy:{:.2%}\nTest Loss :{:.2f},Test Accuracy :{:.2%}'
       print (template.format(epoch+1,train_loss.result(),train_accuracy.result(),test_loss.result(),test_accuracy.result()))
  
-    model.save_weights('./model/face6') #保存权重模型 命名为face1
+    model.save_weights('./model/face7') #保存权重模型 命名为face1
  
  
