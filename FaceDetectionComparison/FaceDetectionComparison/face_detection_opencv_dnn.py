@@ -34,8 +34,8 @@ if __name__ == "__main__" :
         configFile = "deploy.prototxt"
         net = cv2.dnn.readNetFromCaffe(configFile, modelFile)
     else:
-        modelFile = "opencv_face_detector_uint8.pb"
-        configFile = "opencv_face_detector.pbtxt"
+        modelFile = "./models/opencv_face_detector_uint8.pb"
+        configFile = "./models/opencv_face_detector.pbtxt"
         net = cv2.dnn.readNetFromTensorflow(modelFile, configFile)
 
     conf_threshold = 0.7

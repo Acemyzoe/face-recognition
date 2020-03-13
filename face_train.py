@@ -1,12 +1,12 @@
-from __future__ import absolute_import, division, print_function, unicode_literals
+#from __future__ import absolute_import, division, print_function, unicode_literals
 import random
 import numpy as np
 from sklearn.model_selection import  train_test_split
-from keras import backend as K
 from face_data import load_dataset, resize_image, IMAGE_SIZE
 import tensorflow as tf
-from tensorflow.keras.layers import Dense, Flatten, Conv2D
-from tensorflow.keras import Model
+#from keras import backend as K
+#from tensorflow.keras.layers import Dense, Flatten, Conv2D
+#from tensorflow.keras import Model
  
  
 class Dataset:
